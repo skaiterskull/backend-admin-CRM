@@ -1,0 +1,13 @@
+//user apis
+### get admin user
+
+POST http://localhost:8001/api/v1/admin-user
+Content-Type: application/json
+
+{
+    "fName" : "Hendra",
+    "lName" : "Wijaya",
+    "email" : "hendra@yahoo.com",
+    "phone" : "0414458880",
+    "password" : "123456"
+}
