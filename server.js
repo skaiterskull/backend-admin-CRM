@@ -24,8 +24,10 @@ app.use(urlencoded({ extended: true }));
 
 //load router
 import adminRouter from "./src/routers/admin.router.js";
+import loginRouter from "./src/routers/login.router.js";
 //user router
 app.use("/api/v1/admin-user", adminRouter);
+app.use("/api/v1/login", loginRouter);
 
 app.use("/", (req, res, next) => {
   res.send("ok");

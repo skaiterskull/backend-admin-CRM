@@ -39,6 +39,16 @@ const AdminUserSchema = new mongoose.Schema(
       maxLength: 30,
       default: "developer", //admin, developer, customerService,
     },
+    refreshJWT: {
+      addedAt: {
+        type: Date,
+        default: Date.now(),
+      },
+      token: {
+        type: String,
+        maxlength: 500,
+      },
+    },
   },
   { timestamps: true }
 );

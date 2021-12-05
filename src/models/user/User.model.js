@@ -22,7 +22,7 @@ export const getAllAdminUserByFilter = (filter) => {
 
 // Update User
 export const updateAdminUser = (filter, obj) => {
-  return AdminUserSchema.findOneAndUpdate(filter, obj);
+  return AdminUserSchema.findOneAndUpdate(filter, obj, { new: true });
 };
 
 // Delete User
